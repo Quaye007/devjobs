@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+html{
+    width: 100%;
+    position: relative;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+   
+    background-color:rgb(252, 252, 252);
+
+
+}
+
+
+.main-page{
+  
+    height: 100vh;
+    background-color: whitesmoke;
+    align-items: center;
+
+}
+
+
+
+.header{
+
+    padding:  2rem;
+   
+  
+
+
+    background-color: #939bf4;
+    border-radius: 0 0 0 70px;
+    height: 2.5rem;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 60%;
+    
+}
+
+
+
+.search-bar{
+    width: 82%;
+    height: 4rem;
+    background-color: white;
+    margin-left: 7.5rem;
+    margin-top: -2rem;
+
+
+}
+
+
+
+
+
+
+
+.job-page{
+    height: 100%;
+
+  
+    
+    display: flex;
+    gap: 3rem  7.5rem;
+    padding: 2rem  7rem ;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.job-1{
+    height: 12rem;
+    width: 18rem;
+    background-color: #939bf4;
+
+    border-radius: 5px;
+}
+
+
