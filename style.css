@@ -175,7 +175,7 @@ background-color: #939bf4;
 .job-1{
     height: 12rem;
     width: 18rem;
-    background-color: #939bf4;
+    background-color: white;
     
     border-radius: 5px;
 }
@@ -183,12 +183,21 @@ background-color: #939bf4;
 
 .job-1 .img-box{
     height:25%;
-    width: 20%;
-    background-color: yellow;
+    width: 18%;
+    background-color: whitesmoke;
     border-radius: 10px;
-   
+    overflow: hidden;
     margin-left: 1rem;
     margin-top: -1rem;
+}
+
+
+
+.img-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 
@@ -200,7 +209,48 @@ background-color: #939bf4;
     background-color: green;
 }
 
-.clock{
+
+.job-1 .role {
+    margin-top: 10px;
+    margin-left: 1rem;
+    height: 15%;
+    width: 80%;
+  
+    font-weight: bold;
+}
+
+
+
+
+.job-1 .company{
+
+   
+    margin-left: 1rem;
+    height: 10%;
+    width: 70%;
+   
+
+    font-size: 10px;
+    color: darkgray;
+}
+
+
+
+
+.job-1 .loc{
+
+    margin-top: 20px;
+    margin-left: 1rem;
+    height: 10%;
+    width: 70%;
+    font-weight: bold;
+
+    font-size: 10px;
+
+    color:#4b59f1;
+}
+
+.clock {
     height: 100%;
     width: 40%;
     background-color:aqua;
