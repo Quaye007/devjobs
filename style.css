@@ -517,6 +517,12 @@ background-color: #939bf4;
 }
 
 @media (max-width:420px){
+   
+    .job-1{
+        margin-top: 3rem;
+    }
+   
+   
     .header{
         border-radius: 0;
     }
