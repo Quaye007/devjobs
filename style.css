@@ -73,6 +73,7 @@ a, a:hover, a:focus, a:active {
     height: 2.5rem;
     color: white;
 
+    flex-wrap: wrap;
     display: flex; 
     align-items: center;
     justify-content: space-around;
@@ -130,7 +131,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .search-bar{
-    width: 71%;
+    width: 77%;
     height: 4rem;
     background-color: var(--primary-color);
    border-radius: 5px;
@@ -200,7 +201,9 @@ textarea:focus, input:focus{
 
 }
 
-
+#filter{
+    display: none;
+}
 .search-button{
     background-color:rgba(61, 61, 206, 0.966);
     text-align: center;
@@ -362,7 +365,6 @@ background-color: #939bf4;
 
 
 
-
 /* dark theme */
 
 /* #dark-search-bar{
@@ -419,20 +421,24 @@ background-color: #939bf4;
 }
 .job-type{
     padding: 1rem;
+    display: flex;
 }
 
 #des-page{
     width: 100%;
+    display: flex;
 }
 
 #role-des{
-    width: 70%;
+    width: 60%;
     
 }
 
 
-
-
+#apply-btn{
+    margin-left: 1rem;
+    width: 30%;
+}
 
 #role-b{
     margin-top: 10px;
@@ -441,11 +447,26 @@ background-color: #939bf4;
     width: 100%;
     color: var(--secondary-color);
     font-weight: bold;
+    gap: -1rem;
+    display: flex;
+    flex-direction: row;
 
 }
 
 
+.side-a{
+    width: 70%;
 
+}
+
+.sied-b{
+    width:30%
+}
+
+@media (max-width: 920px){
+
+    .search-bar{width: 70%;}
+}
 
 
 
@@ -469,7 +490,7 @@ background-color: #939bf4;
 
 
 .job-1{
-    background-color: yellow;
+   
 }
 
 #job-header{
@@ -480,6 +501,19 @@ background-color: #939bf4;
 
     width: 60%;
 }
+
+
+
+.search-button{
+   
+    text-align: center;
+    padding: 10px 10px;
+   
+    border-radius: 3px;
+    font-size: 7px;
+    
+}
+
 }
 
 @media (max-width:420px){
@@ -499,7 +533,9 @@ background-color: #939bf4;
 
 
 
-   
+    #filter{
+        display:contents;
+    }
 
 
     #mobile-company{
@@ -528,5 +564,89 @@ background-color: #939bf4;
 
     #job-type{
         width: 20%;
+        display: none;
     }
+
+    .search-bar .location-box{
+        display: none;
+    }
+
+    .label{
+        display: none;
+    }
+
+
+    #search-input{
+        font-size: 7px;
+    }
+
+    .search-box{
+        width: 50%;
+    }
+
+
+
+    .bg-modal{
+        width: 100%;
+        height: 100%;
+       
+        background-color: rgba(0, 0, 0, 0.7);
+      
+       
+        position: absolute;
+        top:0;
+        display: flex;
+     
+    }
+    
+    
+    .modal-content{
+        
+        height: 140px;
+        width: 240px;
+        background-color: white;
+        opacity: 1;
+        top: 0;
+
+    margin-left: 4.5rem;
+    margin-top: 10rem;
+       
+    display: flex;
+
+    border-radius: 5px;
+    
+    }
+
+    .location-box-mobile{
+        padding:1rem;
+        gap: 5px;
+    }
+
+    .fa-search{
+        display: none;
+    }
+
+    #search-input-mobile{
+        height: 30%;
+        width: 100%;
+        margin: 0;
+        border: none;
+        display: flex;
+
+        align-items: center;
+        justify-content: center ;
+    }
+
+    .location-box-mobile .fa-map-marker{
+        display: contents;
+        height: 40%;
+        align-items: center;
+    }
+    
+    .fa-location-pin:before, .fa-map-marker:before {
+        content: "\f041";
+        height: 40%;
+        margin-top: 10px;
+    }
+    .location-box-mobile{display: flex;}
 }

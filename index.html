@@ -53,6 +53,8 @@
         <input type="checkbox" id="job-type" name="job-type" value="full-time">
         <label for="job-type" class="label"> Full Time Only</label><br>
 
+
+        <i  onclick="togglePopup()" class="fa fa-filter" id="filter" aria-hidden="true"></i>
         <button class="search-button">Search</button>
         
     </div>
@@ -485,35 +487,14 @@
 </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="bg-modal">
+    <div class="modal-content">
+        <div class="location-box-mobile">
+            <i class="fa fa-map-marker" aria-hidden="true"></i></i> <input type="search" id="search-input-mobile" placeholder="Filter by location">
+        </div>
+    
+    </div>
+</div>
 
 
 
