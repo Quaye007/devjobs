@@ -1,20 +1,16 @@
 
-// let clock = document.getElementById("clock");
+document.getElementById('filter').addEventListener('click',
+function(){
+   document.querySelector('.bg-modal').style.display ='flex';
+});
 
 
 
+document.getElementById('close').addEventListener('click', 
+function(){
+   document.querySelector('.bg-modal').style.display ='none'
 
-
-
-// setInterval (function () {
-//   let date = new Date();
-//   clock.innerHTML = date.toLocaleTimeString();
-// },1000);
-
-
-
-
-
+});
 
 var icon = document.getElementById("switch");
 
