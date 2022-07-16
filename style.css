@@ -666,6 +666,7 @@ background-color: #939bf4;
     align-items: center;
     justify-content: center;
     background-color: pink;
+    width: 85%
     
     
     }
@@ -678,7 +679,7 @@ background-color: #939bf4;
         background-color: red;
         height: 20%;
         color: #1b1b1b;
-        width: 80% ;
+        width: 90% ;
         align-items: center;
         justify-content: center;
         padding-left: 20px;
