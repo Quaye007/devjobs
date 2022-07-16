@@ -38,7 +38,7 @@
 
   
     <div class="search-box"  id="dark-search-box">
-           <i class="fa fa-search" aria-hidden="true"></i> <input type="search" id="search-input" placeholder=" Filter by title, companies, expertise">
+           <i class="fa fa-search" aria-hidden="true"></i> <input type="search" id="search-input" placeholder=" Filter by title, companies, expertise" onkeyup="search()">
     </div>
 
     <div class="location-box">
@@ -74,7 +74,7 @@
 
 
 
-<div class="job-page" >
+<div class="job-page" id="job-list" >
 
 
    
@@ -93,7 +93,7 @@
 
 
          <div class="role">
-            <span>Senior Software Developer</span>
+            <span class="item" >Senior Software Developer</span>
         </div>
 
         <div class="company">
@@ -129,7 +129,7 @@
 
 
          <div class="role">
-            <span>Haskell and Purescript Dev</span>
+            <span class="item">Haskell and Purescript Dev</span>
         </div>
 
         <div class="company">
@@ -161,7 +161,7 @@
 
 
          <div class="role">
-            <span>Middlelevel Back End Dev</span>
+            <span class="item">Middlelevel Back End Dev</span>
         </div>
 
         <div class="company">
@@ -193,7 +193,7 @@
 
 
          <div class="role">
-            <span>Senior Application Engineer</span>
+            <span class="item">Senior Application Engineer</span>
         </div>
 
         <div class="company">
@@ -225,7 +225,7 @@
 
 
          <div class="role">
-            <span>UX/UI Designer</span>
+            <span class="item">UX/UI Designer</span>
         </div>
 
         <div class="company">
@@ -257,7 +257,7 @@
 
 
          <div class="role">
-            <span>iOS Engineer</span>
+            <span class="item">iOS Engineer</span>
         </div>
 
         <div class="company">
@@ -289,7 +289,7 @@
 
 
          <div class="role">
-            <span>Remote DevOps Engineer</span>
+            <span class="item">Remote DevOps Engineer</span>
         </div>
 
         <div class="company">
@@ -321,7 +321,7 @@
 
 
          <div class="role">
-            <span>Senior FrontEnd Developer</span>
+            <span class="item">Senior FrontEnd Developer</span>
         </div>
 
         <div class="company">
@@ -352,7 +352,7 @@
 
 
          <div class="role">
-            <span>Fullstack Developer</span>
+            <span class="item">Fullstack Developer</span>
         </div>
 
         <div class="company">
@@ -384,11 +384,11 @@
 
 
          <div class="role">
-            <span>Technical Lead Engineer</span>
+            <span class="item">Technical Lead Engineer</span>
         </div>
 
         <div class="company">
-            <span>Instagram</span>
+            <span >Instagram</span>
         </div>
 
         <div class="loc">
@@ -416,7 +416,7 @@
 
 
          <div class="role">
-            <span>Senior Software Developer</span>
+            <span class="item">Senior Software Developer</span>
         </div>
 
         <div class="company">
@@ -424,7 +424,7 @@
         </div>
 
         <div class="loc">
-            <span>  United Kingdom</span>
+            <span class="item">  United Kingdom</span>
         </div>
 
 
@@ -448,7 +448,7 @@
 
 
          <div class="role">
-            <span>Senior Software Developer</span>
+            <span class="item">Senior Software Developer</span>
         </div>
 
         <div class="company">
@@ -520,9 +520,33 @@
 
 
 
-    <script src='app.js' defer></script>
+    <script src='app.js' ></script>
+    <script src='dark.js'></script>
+
+    <script>
+        document.querySelector('#search-input').addEventListener('input', filterList);
 
 
+        function filterList(){
+            const searchInput = document.querySelector('#search-input');
+            const filter = searchInput.value.toLowerCase();
+            const post = document.getElementById('job-list')
+          
+            const listItems = document.querySelectorAll('.job-1');
+
+            listItems.forEach((item) => {
+                let text = item.textContent
+                if(text.toLowerCase().includes(filter.toLowerCase())){
+                    item.style.display = '';
+                } else{
+                    item.style.display = 'none';
+                }
+            })
+           
+        }
+
+
+    </script>
 
 
 </body>

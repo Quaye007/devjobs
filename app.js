@@ -1,22 +1,42 @@
 
-document.getElementById('filter').addEventListener('click',
-function(){
-   document.querySelector('.bg-modal').style.display ='flex';
-});
+
+
+// const search = () => {
+//    const searchbox = document.getElementById("search-input").ariaValueMax.toUpperCase();
+//    const jobitems = document.getElementById("job-list")
+//    const job = document.querySelectorAll(".job-1")
+//    const jname = jobitems.getElementsByTagName("span")
+
+
+//    for (var i = 0; i < jname.lenngth; i++ ){
+//       let match = job[i].getElementsByTagName('span')[0];
+
+//       if (match) {
+//          let textvalue = match.textContent || match.innerHTML
+
+//          if (textvalue.toUpperCase().indexOf(searchbox) > -1){
+//                job[i].style.display = "";
+
+
+//          } else {
+//             job[i].style.display = "none";
+//          }
+//       }
+
+//    }
+// }
 
 
 
-document.getElementById('close').addEventListener('click', 
-function(){
-   document.querySelector('.bg-modal').style.display ='none'
 
-});
 
-var icon = document.getElementById("switch");
 
-icon.onclick = function(){
-   document.body.classList.toggle("dark-theme")
-}
+
+
+
+
+
+
 
 
 

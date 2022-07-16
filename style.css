@@ -169,7 +169,7 @@ a, a:hover, a:focus, a:active {
 
 .search-box input{
     background-color: var(--primary-color);
-    color: white;
+    color: black;
 }
 
 
@@ -201,6 +201,11 @@ textarea:focus, input:focus{
 
 }
 
+.location-box input{
+    background-color: var(--primary-color);
+    color: black;
+}
+
 #filter{
     display: none;
 }
@@ -229,6 +234,7 @@ background-color: #939bf4;
     height: 100%;
     width: 100%;
     border: none;
+    
 }
 
 .job-type{
@@ -489,9 +495,7 @@ background-color: #939bf4;
     }
 
 
-.job-1{
-   
-}
+
 
 #job-header{
     width: 60%;
