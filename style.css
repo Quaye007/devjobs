@@ -577,7 +577,7 @@ background-color: #939bf4;
         display: none;
     }
 
-    .label{
+    .check-label{
         display: none;
     }
 
@@ -620,12 +620,18 @@ background-color: #939bf4;
     display: flex;
 
     border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap:0.7rem;
     
     }
 
     .location-box-mobile{
         padding:1rem;
-        gap: 5px;
+        gap: 15px;
     }
 
     .fa-search{
@@ -633,7 +639,7 @@ background-color: #939bf4;
     }
 
     #search-input-mobile{
-        height: 30%;
+       
         width: 100%;
         margin: 0;
         border: none;
@@ -652,8 +658,41 @@ background-color: #939bf4;
     .fa-location-pin:before, .fa-map-marker:before {
         content: "\f041";
         height: 40%;
-        margin-top: 10px;
+       
  
     }
-    .location-box-mobile{display: flex;}
+    .location-box-mobile{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    
+    
+    }
+
+    .location-box-mobile placeholder{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .job-type-mobile{
+        background-color: red;
+        height: 20%;
+        color: #1b1b1b;
+        width: 80% ;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
+        gap: 30px;
+
+      
+    }
+
+    #search-button-mobile{
+        width: 85%;
+        text-align: center;
+        align-items: center;
+        padding: 10px 30px;
+        justify-content: center;
+        font-weight: bold;
+    }
 }
