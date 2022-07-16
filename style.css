@@ -643,6 +643,7 @@ background-color: #939bf4;
         width: 100%;
         margin: 0;
         border: none;
+        border-radius: 0%;
         display: flex;
 
         align-items: center;
@@ -665,7 +666,7 @@ background-color: #939bf4;
         display: flex;
     align-items: center;
     justify-content: center;
-        background-color: pink;
+       
     width: 90%
     
     
@@ -684,6 +685,7 @@ background-color: #939bf4;
         justify-content: center;
         padding-left: 20px;
         gap: 50px;
+
 
       
     }
