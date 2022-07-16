@@ -24,6 +24,7 @@
 }
 html{
     width: 100%;
+    
     position: relative;
     font-family: 'Kumbh Sans', sans-serif;
 }
@@ -162,6 +163,11 @@ a, a:hover, a:focus, a:active {
    
 }
 
+
+.bg-modal{
+    display: none;
+}
+
 .location-box input{
     background-color: var(--primary-color);
     color: white;
@@ -263,10 +269,13 @@ background-color: #939bf4;
     gap: 5px;
    
 }
-.job-page{
-    height: 100%;
 
-   
+
+.job-page{
+  
+
+   min-height: 90%;
+   min-width: 90%;
     
     display: flex;
    
@@ -276,6 +285,8 @@ background-color: #939bf4;
 
     align-items: center;
     justify-content: center;
+
+   
 }
 
 
@@ -290,9 +301,15 @@ background-color: #939bf4;
     border-radius: 5px;
 }
 
+.part-time-job{
+    height: 12rem;
+    width: 18rem;
+    background-color:var(--primary-color);
+    
+    border-radius: 5px;
+}
 
-
-.job-1 .img-box{
+ .img-box{
     height:25%;
     width: 18%;
     background-color: whitesmoke;
@@ -311,7 +328,7 @@ background-color: #939bf4;
 }
 
 
-.job-1 .time-type{
+ .time-type{
     margin-top: 10px;
     margin-left: 1rem;
     height: 15%;
@@ -320,7 +337,7 @@ background-color: #939bf4;
 }
 
 
-.job-1 .role {
+ .role {
     margin-top: 10px;
     margin-left: 1rem;
     height: 15%;
@@ -332,7 +349,7 @@ background-color: #939bf4;
 
 
 
-.job-1 .company{
+.company{
 
    
     margin-left: 1rem;
@@ -347,7 +364,7 @@ background-color: #939bf4;
 
 
 
-.job-1 .loc{
+.loc{
 
     margin-top: 20px;
     margin-left: 1rem;

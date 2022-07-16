@@ -38,7 +38,7 @@
 
   
     <div class="search-box"  id="dark-search-box">
-           <i class="fa fa-search" aria-hidden="true"></i> <input type="search" id="search-input" placeholder=" Filter by title, companies, expertise" onkeyup="search()">
+           <i class="fa fa-search" aria-hidden="true"></i> <input type="search" id="search-input" placeholder=" Filter by title, companies, expertise">
     </div>
 
     <div class="location-box">
@@ -50,11 +50,11 @@
     <div class="job-type">
         
         
-        <input type="checkbox" id="job-type" name="job-type" value="full-time">
+        <input  onclick="checker()" type="checkbox" id="job-type" name="job-type" value="full-time">
         <label for="job-type" class="check-label"  id="check-box-label"> Full Time Only</label><br>
 
 
-        <i  onclick="togglePopup()" class="fa fa-filter" id="filter" aria-hidden="true"></i>
+        <i  onclick="filterList()" class="fa fa-filter" id="filter" aria-hidden="true"></i>
         <button class="search-button"  id="search-button">Search</button>
         
     </div>
@@ -78,7 +78,7 @@
 
 
    
-    <div class="job-1"  >
+    <div class="job-1"  id="part-time-role"  >
 
         <a class="linker" href="/roles/dev1.html">
         <div class="img-box">
@@ -112,7 +112,7 @@
 
     
 
-    <div class="job-1">
+    <div class="job-1" id="part-time-role">
 
         
     <a href="/roles/dev1.html">
@@ -147,7 +147,7 @@
     </div>
     
 
-    <div class="job-1">
+    <div class="job-1" id="part-time-role">
 
         <div class="img-box">
             <img src="./img/uber.png" alt="">
@@ -211,7 +211,7 @@
     </div>
 
 
-    <div class="job-1">
+    <div class="job-1"  id="part-time-role">
 
         <div class="img-box">
             <img src="./img/ax.png" alt="">
@@ -243,7 +243,7 @@
     </div>
 
 
-    <div class="job-1">
+    <div class="job-1" id="part-time-role">
 
         <div class="img-box">
             <img src="./img/depot.png" alt="">
@@ -275,7 +275,7 @@
     </div>
 
 
-    <div class="job-1">
+    <div class="job-1" id="part-time-role">
 
         <div class="img-box">
             <img src="./img/seven.png" alt="">
@@ -402,7 +402,7 @@
     </div>
 
 
-    <div class="job-1">
+    <div class="job-1" id="part-time-role">
 
         <div class="img-box">
             <img src="./img/depot.png" alt="">
@@ -524,27 +524,7 @@
     <script src='dark.js'></script>
 
     <script>
-        document.querySelector('#search-input').addEventListener('input', filterList);
-
-
-        function filterList(){
-            const searchInput = document.querySelector('#search-input');
-            const filter = searchInput.value.toLowerCase();
-            const post = document.getElementById('job-list')
-          
-            const listItems = document.querySelectorAll('.job-1');
-
-            listItems.forEach((item) => {
-                let text = item.textContent
-                if(text.toLowerCase().includes(filter.toLowerCase())){
-                    item.style.display = '';
-                } else{
-                    item.style.display = 'none';
-                }
-            })
-           
-        }
-
+    
 
     </script>
 
