@@ -132,7 +132,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .search-bar{
-    width: 77%;
+    width: 72%;
     height: 4rem;
     background-color: var(--primary-color);
    border-radius: 5px;
