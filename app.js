@@ -27,8 +27,15 @@
 // }
 
 
-document.querySelector('#search-input').addEventListener('input', filterList);
 
+
+
+
+
+
+document.querySelector('#search-button').addEventListener('click', filterList);
+
+// document.querySelector('#search-input').addEventListener('input', filterList);
 
 function filterList(){
     const searchInput = document.querySelector('#search-input');

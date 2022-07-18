@@ -19,6 +19,12 @@ icon.onclick = function(){
 };
 
 
+document.getElementById('load-more').addEventListener('click',
+function(){
+   document.getElementById('page-2').style.display ='flex';
+   document.getElementById('load-more').style.display = 'none';
+});
+
 
 
 
