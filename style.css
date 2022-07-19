@@ -218,12 +218,13 @@ textarea:focus, input:focus{
 .search-button{
     background-color:rgba(61, 61, 206, 0.966);
     text-align: center;
-    padding: 10px 30px;
+    padding: 0.7rem 2rem;
     color: white;
     border: none;
     border-radius: 3px;
-    font-size: 7px;
+    font-size: 10px;
     display: flex;
+    font-weight: bold;
 }
 
 .load{
@@ -388,26 +389,13 @@ background-color: #939bf4;
 
 
 
-/* dark theme */
-
-/* #dark-search-bar{
-    background-color: rgb(54, 54, 54);
-}
-#search-input{
-    color: whitesmoke;
-    background-color: rgb(54, 54, 54);
-}
-#dark-job{
-    background-color: rgb(54, 54, 54);
-} */
-
 
 
 #job-header{
     padding: 0;
     justify-content: space-evenly;
     float: left;
-    width: 58%;
+    width: 54%;
     height: 6rem;
 
 
@@ -454,13 +442,19 @@ background-color: #939bf4;
 
 #role-des{
     width: 60%;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
     
 }
 
 
 #apply-btn{
-    margin-left: 1rem;
-    width: 30%;
+    padding: 0.7rem 2rem;
+    font-weight: bold;
+    font-size: 10px;
+    
+   
 }
 
 #role-b{
@@ -479,11 +473,17 @@ background-color: #939bf4;
 
 .side-a{
     width: 70%;
-
+    display: flex;
+    flex-direction: column;
 }
 
-.sied-b{
-    width:30%
+.side-b{
+    width:30%;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -492,6 +492,32 @@ background-color: #939bf4;
 #page-2{
     display: none;
 }
+
+
+#site{
+    padding: 0.7rem 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queires here */
+
+
+
+
 
 @media (max-width: 920px){
 
@@ -532,15 +558,16 @@ background-color: #939bf4;
 
 
 
-.search-button{
+/* .search-button{
    
     text-align: center;
-    padding: 10px 10px;
+    padding: 0.5rem 2rem;
    
     border-radius: 3px;
-    font-size: 7px;
+    font-size: 10px;
+    font-weight: bold;
     
-}
+} */
 
 }
 
