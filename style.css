@@ -364,7 +364,7 @@ background-color: #939bf4;
     margin-left: 1rem;
     height: 10%;
     width: 70%;
-    background-color: green;
+  
     display: flex;
 }
 
@@ -411,13 +411,13 @@ background-color: #939bf4;
 
 .clock {
     height: 100%;
-    width: 40%;
-    background-color:aqua;
+    width: 20%;
+  
     color: black;
 }
 
 .type{
-    background-color: red;
+
     width: 50%;
     color: #2a2a2b;
     font-size:15px;
