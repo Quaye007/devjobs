@@ -225,6 +225,7 @@ textarea:focus, input:focus{
     font-size: 10px;
     display: flex;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .load{
@@ -439,6 +440,7 @@ background-color: #939bf4;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
 #role-des{
@@ -459,6 +461,8 @@ background-color: #939bf4;
    
 }
 
+
+
 #role-b{
     margin-top: 10px;
     margin-left: 1rem;
@@ -477,6 +481,7 @@ background-color: #939bf4;
     width: 70%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .side-b{
@@ -486,6 +491,8 @@ background-color: #939bf4;
 
     align-items: center;
     justify-content: center;
+
+    flex-wrap: wrap;
 }
 
 
@@ -499,7 +506,6 @@ background-color: #939bf4;
 #site{
     padding: 0.7rem 1.5rem;
 }
-
 
 
 
@@ -537,6 +543,19 @@ li::marker {
 
 ul > li::marker {
     font-weight: bold;
+  }
+
+
+
+
+  .job-footer{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem  ;
   }
 
 
@@ -598,6 +617,14 @@ ul > li::marker {
 } */
 
 }
+
+
+
+
+
+
+
+
 
 @media (max-width:420px){
    
@@ -797,4 +824,35 @@ ul > li::marker {
         cursor: pointer;
     }
 
+
+    .side-a{
+        width: 100%;
+    }
+
+    .side-b{
+        width: 100%;
+    
+    }
+
+    #apply-btn{
+        width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .job-footer{
+      
+        justify-content: center;
+        align-items: center;
+    }
+
+    .comp-des{
+        display: none;
+    }
+
+    .footer-button{
+        width: 60%;
+        margin: 0;
+    }
 }
