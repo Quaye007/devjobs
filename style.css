@@ -98,6 +98,7 @@ a, a:hover, a:focus, a:active {
     display: block;
     border-radius: 30px;
     position: relative;
+    top:-1rem;
 
 }
 
@@ -132,7 +133,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .search-bar{
-    width: 72%;
+    width: 75%;
     height: 4rem;
     background-color: var(--primary-color);
    border-radius: 5px;
@@ -140,7 +141,8 @@ a, a:hover, a:focus, a:active {
     padding: 1rem 0;
     display: flex;
 
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5rem;
 
     color: darkgray;
 
@@ -269,6 +271,7 @@ background-color: #939bf4;
     align-items: center;
     justify-content: center;
     gap: 5px;
+    margin-right: -3rem;
    
 }
 
@@ -584,6 +587,7 @@ ul > li::marker {
    
     .search-bar{
         width: 82%;
+        gap: 2rem;
 
     }
  .job-page{
@@ -603,7 +607,9 @@ ul > li::marker {
     width: 60%;
 }
 
-
+.search-box{
+    margin-left: -3rem;
+}
 
 /* .search-button{
    
@@ -628,6 +634,10 @@ ul > li::marker {
 
 @media (max-width:420px){
    
+
+
+
+    
     .job-1{
         margin-top: 3rem;
     }
@@ -641,7 +651,7 @@ ul > li::marker {
         display: flex;
         flex-direction: column;
         padding: 0;
-
+        gap: 10px;  
         height: 10rem;
        
         align-items: center;
@@ -683,6 +693,12 @@ ul > li::marker {
         display: none;
     }
 
+
+    .search-bar{
+        justify-content: center;
+        width: 70%;
+       
+    }
     .search-bar .location-box{
         display: none;
     }
@@ -697,7 +713,8 @@ ul > li::marker {
     }
 
     .search-box{
-        width: 50%;
+        width: 40%;
+        margin-left: -5rem;
     }
 
 
@@ -812,6 +829,7 @@ ul > li::marker {
         padding: 10px 30px;
         justify-content: center;
         font-weight: bold;
+        margin-right: 10px;
     }
 
     .close{
@@ -845,6 +863,7 @@ ul > li::marker {
       
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .comp-des{
@@ -854,5 +873,9 @@ ul > li::marker {
     .footer-button{
         width: 60%;
         margin: 0;
+    }
+
+    #role-des{
+        width: 80%;
     }
 }
