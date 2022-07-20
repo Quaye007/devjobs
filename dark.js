@@ -7,7 +7,7 @@ function(){
 
 
 document.getElementById('close').addEventListener('click', 
-function(close){
+function close(){
    document.querySelector('.bg-modal').style.display ='none'
 
 });
@@ -86,3 +86,72 @@ checkbox.addEventListener('change', e=>{
 //         document.querySelectorAll('#part-time-role').style.display ='none';
 //     }
 // }
+
+
+
+
+
+
+
+document.querySelector('#search-button').addEventListener('click', filterList);
+
+
+
+
+
+
+// document.querySelector('#search-input').addEventListener('input', filterList);
+
+function filterList(){
+    const searchInput = document.querySelector('#search-input');
+    const filter = searchInput.value.toLowerCase();
+   
+   
+  
+    const listItems = document.querySelectorAll('.job-1');
+
+    listItems.forEach((item) => {
+        let text = item.textContent
+  
+
+        if(text.toLowerCase().includes(filter.toLowerCase())){
+            item.style.display = '';
+    
+        } else{
+            item.style.display = 'none';
+           
+        }
+    })
+   
+
+
+}
+
+   
+   
+function filterListTwo(){
+    const locationInput = document.querySelector('#location-input');
+    const filter = locationInput.value.toLowerCase();
+   
+   
+  
+    const listItemsTwo = document.querySelectorAll('.job-1');
+
+    listItemsTwo.forEach((item) => {
+        let text = item.textContent
+  
+
+        if(text.toLowerCase().includes(filter.toLowerCase())){
+            item.style.display = '';
+    
+        } else{
+            item.style.display = 'none';
+           
+        }
+    })
+   
+
+
+}
+
+  
