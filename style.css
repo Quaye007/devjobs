@@ -27,6 +27,7 @@ html{
     overflow-x: hidden;
     position: relative;
     font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--tertiary-color);
 }
 
 
@@ -82,6 +83,19 @@ a, a:hover, a:focus, a:active {
     
 }
 
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.sun i{
+    color: var(--primary-color);
+}
+
 .nav-menu input[type=checkbox] {
     height:0;
     width: 0;
@@ -98,7 +112,7 @@ a, a:hover, a:focus, a:active {
     display: block;
     border-radius: 30px;
     position: relative;
-    top:-1rem;
+
 
 }
 
@@ -106,7 +120,7 @@ a, a:hover, a:focus, a:active {
     content: '';
     position: absolute;
     top: 5px;
-    left: 7px;
+    left: 5px;
     width: 20px;
     height: 20px;
     background-color: #939bf4;
@@ -124,7 +138,7 @@ a, a:hover, a:focus, a:active {
 
 .nav-menu input:checked+label::after {
     left: calc(100% -10px);
-    transform: translateX(+140%);
+    transform: translateX(+120%);
 
 }
 
@@ -177,7 +191,7 @@ a, a:hover, a:focus, a:active {
 
 .search-box input{
     background-color: var(--primary-color);
-    color: black;
+    color:var(--secondary-color);
 }
 
 
@@ -192,6 +206,13 @@ a, a:hover, a:focus, a:active {
  .fa {
     color: blue;
 }
+
+.fa-sun-o{
+    color: red;
+    height: 80%;
+    width: 20%;
+}
+
 textarea:focus, input:focus{
     outline: none;
 }
@@ -247,6 +268,11 @@ background-color: #939bf4;
     
 }
 
+#location-input{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
 .job-type{
     display: flex;
     width: 30%;
@@ -336,9 +362,10 @@ background-color: #939bf4;
  .time-type{
     margin-top: 10px;
     margin-left: 1rem;
-    height: 15%;
+    height: 10%;
     width: 70%;
     background-color: green;
+    display: flex;
 }
 
 
@@ -389,10 +416,18 @@ background-color: #939bf4;
     color: black;
 }
 
+.type{
+    background-color: red;
+    width: 50%;
+    color: #2a2a2b;
+    font-size:15px;
+}
 
 
-
-
+.typpe{
+    font-weight: bold;
+    font-size: 10px;
+}
 
 
 #job-header{
@@ -739,7 +774,7 @@ ul > li::marker {
         
         height: 140px;
         width: 240px;
-        background-color: white;
+        background-color: var(--primary-color);
         opacity: 1;
         top: 0;
 
@@ -811,7 +846,7 @@ ul > li::marker {
     .job-type-mobile{
   
         height: 20%;
-        color: #1b1b1b;
+        color:var(--secondary-color);
         width: 100% ;
         align-items: center;
         justify-content: center;
@@ -853,10 +888,11 @@ ul > li::marker {
     }
 
     #apply-btn{
-        width: 100%;
+        width: 130%;
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-left: -2.3rem;
     }
 
     .job-footer{

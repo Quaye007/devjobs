@@ -31,9 +31,12 @@
 
 
 
-
-
 document.querySelector('#search-button').addEventListener('click', filterList);
+
+
+
+
+
 
 // document.querySelector('#search-input').addEventListener('input', filterList);
 
@@ -64,10 +67,37 @@ function filterList(){
 
    
    
-    
+function filterListTwo(){
+    const locationInput = document.querySelector('#location-input');
+    const filter = locationInput.value.toLowerCase();
+   
+   
+  
+    const listItemsTwo = document.querySelectorAll('.job-1');
+
+    listItemsTwo.forEach((item) => {
+        let text = item.textContent
   
 
+        if(text.toLowerCase().includes(filter.toLowerCase())){
+            item.style.display = '';
+    
+        } else{
+            item.style.display = 'none';
+           
+        }
+    })
+   
 
+
+}
+
+  
+
+// function myFunction(){
+//     filterListTwo();
+//     filterList();
+// }
 
 
 

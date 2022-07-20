@@ -7,7 +7,7 @@ function(){
 
 
 document.getElementById('close').addEventListener('click', 
-function(){
+function(close){
    document.querySelector('.bg-modal').style.display ='none'
 
 });
