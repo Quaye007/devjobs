@@ -1,3 +1,4 @@
+fetch('data,json')
 
 document.getElementById('filter').addEventListener('click',
 function(){
