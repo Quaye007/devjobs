@@ -8,7 +8,7 @@ function(){
 
 document.getElementById('close').addEventListener('click', 
 function close(){
-   document.querySelector('.bg-modal').style.display ='none'
+   document.querySelector('.bg-modal').style.display ='none';
 
 });
 
@@ -25,6 +25,15 @@ icon.onclick = function(){
 };
 
 
+
+
+
+// var bow = document.getElementById("switchTwo");
+
+// bow.onclick = function darkTheme(e) {
+//     document.body.classList.toggle("dark-theme");
+
+// };
 
 
 
@@ -94,7 +103,6 @@ checkbox.addEventListener('change', e=>{
 
 
 document.querySelector('#search-button').addEventListener('click', filterList);
-
 
 
 
