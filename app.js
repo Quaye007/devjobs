@@ -54,21 +54,32 @@ fetch('./data.json').then((data)=>{
         
         
     
-        <div class="header">
+       
+
+<div class="header">
 
 
-        <div class="logo-side">
-            <h1><a href="/index.html">devjobs</a></h1>
-        </div>
-    
-        <div class="nav-menu">
-           <input type="checkbox" id="switchTwo">
-           <label for="switch"></label>
-        </div>
-    
-    
+<div class="logo-side">
+    <h1><a href="./index.html">devjobs</a></h1>
+</div>
+
+
+
+<div class="nav-menu">
+    <div class="sun sunno">
+        <i class="fa fa-sun" aria-hidden="true"></i>
     </div>
-    
+  
+   <input type="checkbox" id="switch" class="switch">
+   <label for="switch"></label>
+
+   <div class="sun suno">
+    <i class="fa fa-moon" aria-hidden="true"></i>
+</div>
+</div>
+
+
+</div>
 
 
 
@@ -95,8 +106,8 @@ fetch('./data.json').then((data)=>{
 
 
 
-<span  >${values.company}</span>
-<span class="little"> Scoot.com</span>
+<span style="color: var(--secondary-color); font-weight:bold"  >${values.company}</span>
+<span class="little"> scoot.com</span>
 </div>
 
 

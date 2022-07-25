@@ -70,7 +70,7 @@ a, a:hover, a:focus, a:active {
 
 .header{
 
-    padding:2rem  2rem 3rem 2rem;
+    padding:2rem  2rem 4rem 2rem;
    
   
     width: 100%;
@@ -79,7 +79,7 @@ a, a:hover, a:focus, a:active {
     border-radius: 0 0 0 70px;
     height: 2.5rem;
     color: white;
-
+    
     flex-wrap: wrap;
     display: flex; 
     align-items: center;
@@ -487,6 +487,8 @@ background-color: #939bf4;
   
     width: 54%;
     height: 6rem;
+   
+    gap:0;
 
 
 
@@ -494,7 +496,7 @@ background-color: #939bf4;
 
 .company-box{
 
-    width: 40%;
+    width: 20%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -513,7 +515,7 @@ background-color: #939bf4;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: red;
+   
     padding-top: 35px;
 }
 
@@ -661,6 +663,10 @@ ul > li::marker {
     margin-left: 5px;
       }
 
+#check-box-label-only{
+    display: none;
+}
+
 
 /* media queires here */
 
@@ -685,8 +691,8 @@ ul > li::marker {
     }
    
     .search-bar{
-        width: 82%;
-        gap: 2rem;
+        width: 77%;
+        gap: 1rem;
 
     }
  .job-page{
@@ -694,12 +700,14 @@ ul > li::marker {
         padding: 0;
     }
 
-
-
-
-#job-header{
-    width: 60%;
+.header{
+    gap: 42%;
 }
+
+.job-page{
+    gap: 2rem 0.5rem;
+}
+
 
 #role-des{
 
@@ -710,6 +718,13 @@ ul > li::marker {
     margin-left: -3rem;
 }
 
+
+#check-box-label-only{
+    display: flex;
+}
+#check-box-label{
+    display: none;
+}
 /* .search-button{
    
     text-align: center;
@@ -754,6 +769,7 @@ ul > li::marker {
         height: 10rem;
        
         align-items: center;
+        justify-content: center;
     }
 
 
@@ -772,9 +788,7 @@ ul > li::marker {
         align-items: center;
         justify-content: center;
         
-        background-image: url(/img/snap.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+     
     }
 
     .company-box h1{
