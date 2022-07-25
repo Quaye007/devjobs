@@ -89,10 +89,16 @@ document.body.classList.toggle("dark-theme")
 
 
 
+var icon = document.getElementById("dark");
+
+icon.onclick =  darkMode =()=>{
+document.body.classList.toggle("dark-theme")
+};
 
 
 
 
+darkMode();
 
 
 
@@ -190,7 +196,7 @@ function filterList(){
 
 }
 
-
+filterList();
 
 // function filterListTwo(){
 //  const locationInput = document.querySelector('#location-input');

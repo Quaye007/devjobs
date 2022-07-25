@@ -70,7 +70,7 @@ fetch('./data.json').then((data)=>{
         <i class="fa fa-sun" aria-hidden="true"></i>
     </div>
   
-   <input type="checkbox" id="switch" class="switch">
+   <input type="checkbox" id="switch dark" class="switch">
    <label for="switch"></label>
 
    <div class="sun suno">
@@ -276,10 +276,7 @@ fetch('./data.json').then((data)=>{
 </div>
 
 
-
-
-        
-        
+   
         
         ` 
      });

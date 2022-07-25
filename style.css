@@ -13,6 +13,7 @@
     --tertiary-color:#f5f5f5;
 
     --additional-color: rgb(245, 241, 241);
+    --filter-color: rgb(145, 145, 145);
    
 
    
@@ -25,6 +26,7 @@
     --secondary-color: #ffffff;
     --tertiary-color:#1b1b1b;
     --additional-color:rgb(49, 49, 49);
+    --filter-color: rgb(255, 255, 255);
    
 }
 html{
@@ -183,7 +185,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .search-bar{
-    width: 72%;
+    width: 69%;
     height: 3rem;
     background-color: var(--primary-color);
    border-radius: 5px;
@@ -209,6 +211,7 @@ a, a:hover, a:focus, a:active {
     align-items: center;
     justify-content: center;
     gap: 5px;
+    margin-left: -1.5rem;
 
     
    
@@ -323,6 +326,12 @@ background-color: #939bf4;
    
 }
 
+
+.check-label input:checked {
+    background-color: yellow;}
+
+
+
 .label{
     font-size: 12px;
     width: 50%;
@@ -330,6 +339,11 @@ background-color: #939bf4;
 }
 
 
+
+#search-button2 {
+    display: none;
+}
+#search-button2 .fa-search{color: white;}
 .job-box{
     
     width: 30%;
@@ -351,7 +365,7 @@ background-color: #939bf4;
     
     display: flex;
    
-    gap: 3rem  3rem;
+    gap: 2rem  2rem;
     padding: 3rem  7rem ;
     flex-wrap: wrap;
 
@@ -395,7 +409,7 @@ background-color: #939bf4;
 .img-box img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit:none;
     flex-shrink: 0;
 }
 
@@ -598,7 +612,8 @@ background-color: #939bf4;
 
 
 #site{
-    padding: 0.7rem 1.5rem;
+    padding: 0.7rem 2rem;
+  
 }
 
 
@@ -661,6 +676,7 @@ ul > li::marker {
     font-weight: bold;
     color: var(--secondary-color);
     margin-left: 5px;
+
       }
 
 #check-box-label-only{
@@ -692,7 +708,7 @@ ul > li::marker {
    
     .search-bar{
         width: 77%;
-        gap: 1rem;
+        gap: 0.5rem;
 
     }
  .job-page{
@@ -725,16 +741,12 @@ ul > li::marker {
 #check-box-label{
     display: none;
 }
-/* .search-button{
+.search-button{
    
-    text-align: center;
-    padding: 0.5rem 2rem;
-   
-    border-radius: 3px;
-    font-size: 10px;
-    font-weight: bold;
+  width: 5rem;
+  justify-content: center;
     
-} */
+}
 
 }
 
@@ -759,6 +771,10 @@ ul > li::marker {
    
     .header{
         border-radius: 0;
+        gap: 5rem;
+
+        align-items: center;
+        justify-content: center;
     }
 
     #job-header{
@@ -776,6 +792,7 @@ ul > li::marker {
 
     #filter{
         display:contents;
+        color: var(--filter-color);
     }
 
 
@@ -810,6 +827,8 @@ ul > li::marker {
     .search-bar{
         justify-content: center;
         width: 70%;
+        align-items: center;
+      
        
     }
     .search-bar .location-box{
@@ -867,6 +886,8 @@ ul > li::marker {
     flex-direction: column;
     align-items: center;
     position: relative;
+
+    justify-content: center;
 
 
     
@@ -939,10 +960,11 @@ ul > li::marker {
         width: 90%;
         text-align: center;
         align-items: center;
-        padding: 10px 30px;
+        padding: 10px 60px;
         justify-content: center;
         font-weight: bold;
         margin-right: 10px;
+    
     }
 
     .close{
@@ -991,5 +1013,28 @@ ul > li::marker {
 
     #role-des{
         width: 80%;
+    }
+
+    #check-box-label-only{
+        display: none;
+    }
+
+    #search-button{
+        display: none;
+    }
+    #search-button2{
+        display:flex;
+        padding:1rem 1rem;
+        margin-left: 7px;
+    }
+
+    .search2{
+        display: flex;
+    }
+
+    .job-type{
+        width: 50%;
+        margin-left: -2rem;
+        width: 70%;
     }
 }
