@@ -29,8 +29,7 @@
 
 
 
-
-
+ 
 // function myFunction(){
 //     filterListTwo();
 //     filterList();
@@ -47,7 +46,8 @@ fetch('./data.json').then((data)=>{
      console.log(completedata);
 
 
-     let data2="";
+     data2 ='';
+   
 
      completedata.map((values)=>{
         data2+=`
@@ -78,7 +78,7 @@ fetch('./data.json').then((data)=>{
 
 
 
-<div  class="company-box" id="mobile-company"    >
+<div  class="company-box" id="mobile-company" >
         <h1 > ${values.company}</h1> 
 </div>
 
@@ -102,7 +102,7 @@ fetch('./data.json').then((data)=>{
 <div class="job-type">
     
   
-    <button class="search-button" id="site" onclick="window.location.href='https://www.snapchat.com/'">Company Site</button>
+    <button class="search-button" id="site" onclick="window.location.href='${values.website}'">Company Site</button>
     
 </div>
 
@@ -136,18 +136,18 @@ fetch('./data.json').then((data)=>{
    
 
     <div class="time-type">
-       <div class="clock"> </div>
+       <div class="clock">${values.postedAt}</div>
 
 
        <div class="type">
-        <span class=typpe>.   Part Time</span>
+        <span class=typpe>. ${values.contract}</span>
        </div>
     </div>
 
 
 
      <div class="role" id="role-b">
-        <span>Senior Software Developer</span>
+        <span> ${values.position}</span>
        
     </div>
 
@@ -156,7 +156,7 @@ fetch('./data.json').then((data)=>{
     
 
     <div class="loc">
-        <span>  United Kingdom</span>
+        <span> ${values.location}</span>
     </div>
 
 
@@ -168,7 +168,7 @@ fetch('./data.json').then((data)=>{
 <div class="side-b">
 
 
-    <button class="search-button" id="apply-btn btn2" onclick="window.location.href=''">Apply Now</button>
+    <button class="search-button" id="apply-btn btn2" onclick="window.location.href=' ${values.apply}'">Apply Now</button>
 
 
  </div>
@@ -181,14 +181,7 @@ fetch('./data.json').then((data)=>{
   <div class="company-des">
 
     <p>
-        At Snap, we believe that reinventing the camera represents our
-         greatest opportunity to improve the way people live and communicate.
-          We contribute to human progress by empowering people to express themselves, 
-          live in the moment, learn about the world, and have fun together.
-          At Snap, we believe that having a team of 
-            diverse backgrounds and voices working together 
-            will enable us to create innovative products that 
-            improve the way people live and communicate. 
+    ${values.description} 
     </p>
 
 
@@ -198,31 +191,16 @@ fetch('./data.json').then((data)=>{
 
 
         <p class="rec">
-            At Snap, we believe that having a team of 
-            diverse backgrounds and voices working together 
-            will enable us to create innovative products that 
-            improve the way people live and communicate. Snap is
-             proud to be an equal opportunity employer, and 
-             committed to providing employment opportunities 
-             regardless of race, religious creed, color,
-              national origin, ancestry, physical disability, mental disability,
-               medical condition, genetic information, marital status, sex,
-                gender, gender identity, gender expression, pregnancy,
-                 childbirth and breastfeeding, age, sexual orientation, 
-                 military or veteran status, or any other protected 
-                 classification, in accordance with applicable federal,
-                 state, and local laws. EOE, including disability/vets.
+        ${values.requirements.content}
         </p>
 
 
 
         <ul class="rec-2">
-            <li>Proven track record of building static website</li>
-            <li>Tech stack: HTML/CSS, React, TypeScript</li>
-            <li>Experienced in optimising for SEO</li>
-            <li>Ability to work on the project basis</li>
-            <li>Experience with content management systems</li>
-
+       <li> ${values.requirements.items[0]}</li>
+       <li> ${values.requirements.items[1]}</li>
+       <li> ${values.requirements.items[2]}</li>
+       <li> ${values.requirements.items[3]}</li>
 
         </ul>
 
@@ -230,13 +208,17 @@ fetch('./data.json').then((data)=>{
 
         <h1> What You Will Do</h1>
 
+        
+        <p class="rec">
+        ${values.role.content}
+        </p>
         <ul class="rec-3">
-            <li>Must have excellent presentation and communication skills</li>
-            <li>Must have the “can do” attitude and willingness to learn new skills to improve performance</li>
-            <li>Meet deadlines given by Tech Manager/Product Owner</li>
-            <li>Collaborate with team members to brainstorm about new products, provide each other with technical insight and review working drafts.</li>
-            <li>Experience with content management systems</li>
-
+            <li>   ${values.role.items[0]}</li>
+            <li>   ${values.role.items[1]}</li>
+            <li>   ${values.role.items[2]}</li>
+            <li>   ${values.role.items[3]}</li>
+   
+           
 
         </ul>
 
@@ -267,14 +249,14 @@ fetch('./data.json').then((data)=>{
 <div class="job-footer">
 <div class="comp-des">
 
-    <h3>Senior Software Developer</h3>
-    <span>Snap Inc</span>
+    <h3>  ${values.position} </h3>
+    <span>  ${values.company} </span>
     
 </div>
 
 <div class="footer-button">
 
-    <button class="search-button" id="apply-btn" onclick="window.location.href=''">Apply Now</button>
+    <button class="search-button" id="apply-btn" onclick="window.location.href=''${values.apply}">Apply Now</button>
     
 </div>
 
@@ -292,12 +274,12 @@ fetch('./data.json').then((data)=>{
 
      document.getElementById("main-dev").innerHTML=data2;
 
- })
+ }) 
 
 
 
 
-
+ loadInitialItems();
 
 
 

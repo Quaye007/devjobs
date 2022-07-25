@@ -130,7 +130,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .sunno{
-    margin-right: 5px;
+    margin-right: 4px;
 }
 .nav-menu input[type=checkbox] {
     height:0;
@@ -525,6 +525,9 @@ background-color: #939bf4;
     display: flex;
 }
 
+.job-type input{
+    background-color: var(--additional-color);
+}
 #des-page{
     width: 100%;
     display: flex;
