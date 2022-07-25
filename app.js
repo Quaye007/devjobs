@@ -52,6 +52,7 @@ fetch('./data.json').then((data)=>{
      completedata.map((values)=>{
         data2+=`
         
+        
     
         <div class="header">
 
@@ -78,7 +79,7 @@ fetch('./data.json').then((data)=>{
 
 
 
-<div  class="company-box" id="mobile-company" >
+<div   style="background-color:${values.logoBackground}"; class="company-box" id="mobile-company" >
         <h1 > ${values.company}</h1> 
 </div>
 
@@ -95,7 +96,7 @@ fetch('./data.json').then((data)=>{
 
 
 <span  >${values.company}</span>
-<span class="little"></span>
+<span class="little"> Scoot.com</span>
 </div>
 
 
