@@ -9,7 +9,7 @@ fetch('data.json').then((data)=>{
 
      completedata.map((values)=>{
         data1+=`
-        <div class="job-1"  id="part-time-role"  >
+        <div class="job-1"  id="job-1"  >
     
             <a class="linker" href="/roles/dev1.html">
             <div style="background-color:${values.logoBackground};" class="img-box">
@@ -29,7 +29,7 @@ fetch('data.json').then((data)=>{
     
     
              <div class="role">
-                <span class="item" > ${values.position}</span>
+                <span class="item" id="item" > ${values.position}</span>
             </div>
     
             <div class="company">
@@ -56,28 +56,10 @@ fetch('data.json').then((data)=>{
 
 
 
-// function  req1(){
-//      fetch('data.json')
-//      .then(response => response.json())
-//     .then(json =>{
-//         const company = json.comapany;
-//         const location = json.location;
-
-
-//        document.getElementById("company-name").innerHTML = company;
-//         document.getElementById("company-location").innerHTML = location;
-
-//     }
-//       )
-
-
-//  }
-
-
-//  req1();
 
 
 
+// mobile view
 
 document.getElementById('filter').addEventListener('click',
 function(){
@@ -133,7 +115,7 @@ document.body.classList.toggle("dark-theme")
 
 
 
-checkbox =document.querySelector('.typpe');
+checkbox =document.getElementById('.typpe');
 
 checkbox.addEventListener('change', e=>{
  if(e.target.checked){
@@ -175,7 +157,7 @@ checkbox.addEventListener('change', e=>{
 
 
 
-document.querySelector('#search-button').addEventListener('click', filterList);
+document.getElementById('search-button').addEventListener('click', filterList());
 
 
 
@@ -184,12 +166,12 @@ document.querySelector('#search-button').addEventListener('click', filterList);
 // document.querySelector('#search-input').addEventListener('input', filterList);
 
 function filterList(){
- const searchInput = document.querySelector('#search-input');
+ const searchInput = document.getElementById("search-input");
  const filter = searchInput.value.toLowerCase();
 
 
 
- const listItems = document.querySelectorAll('.job-1');
+ const listItems = document.getElementById('job-1');
 
  listItems.forEach((item) => {
      let text = item.textContent
@@ -210,28 +192,28 @@ function filterList(){
 
 
 
-function filterListTwo(){
- const locationInput = document.querySelector('#location-input');
- const filter = locationInput.value.toLowerCase();
+// function filterListTwo(){
+//  const locationInput = document.querySelector('#location-input');
+//  const filter = locationInput.value.toLowerCase();
 
 
 
- const listItemsTwo = document.querySelectorAll('.job-1');
+//  const listItemsTwo = document.querySelectorAll('.job-1');
 
- listItemsTwo.forEach((item) => {
-     let text = item.textContent
+//  listItemsTwo.forEach((item) => {
+//      let text = item.textContent
 
 
-     if(text.toLowerCase().includes(filter.toLowerCase())){
-         item.style.display = '';
+//      if(text.toLowerCase().includes(filter.toLowerCase())){
+//          item.style.display = '';
  
-     } else{
-         item.style.display = 'none';
+//      } else{
+//          item.style.display = 'none';
         
-     }
- })
+//      }
+//  })
 
 
 
-}
+// }
 
